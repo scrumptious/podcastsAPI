@@ -1,0 +1,19 @@
+.fa-angle-up .fa-angle-down .fa-angle-left .fa-angle-right {
+  position: absolute;
+}
+.up {
+  bottom: 20px !important;
+  left: 200px !important;
+}
+.down {
+  bottom: 0 !important;
+  left: 200px !important;
+}
+.left {
+  bottom: 0 !important;
+  left: 180px;
+}
+.right {
+  bottom: 0 !important;
+  right: 220px;
+}
