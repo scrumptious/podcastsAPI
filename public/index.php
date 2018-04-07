@@ -16,6 +16,11 @@ if (!isset($_SERVER['APP_ENV'])) {
 }
 
 $env = $_SERVER['APP_ENV'] ?? 'dev';
+
+//set env variables for AWS
+putenv("AWS_ACCESS_KEY_ID=AKIAJA2VBXGWO7WVCEKA");
+putenv("AWS_SECRET_ACCESS_KEY=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");
+
 $debug = (bool) ($_SERVER['APP_DEBUG'] ?? ('prod' !== $env));
 
 if ($debug) {

@@ -1,3 +1,18 @@
 # index:
 #    path: /
 #    controller: App\Controller\ArticleController::homepage
+
+
+# import routes from a controller class
+
+default:
+    path: "/"
+    controller: App\DefaultController::welcome
+
+episode:
+    resource: "Controller/EpisodeController.php"
+    type:     annotation
+
+podcast:
+    resource: "Controller/PodcastController.php"
+    type:     annotation

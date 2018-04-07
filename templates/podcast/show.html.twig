@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+{{ dump() }}
+<h1>Episode {{ id }} of podcast {{ podcast_id }} </h1>
+<div>
+  {#<p>Id: {{ Id }}</p>#}
+
+  {#<p>Title: {{ Result['Title'] }}</p>#}
+  <p>Id: {{ Id }}</p>
+  <p>Download url: <a href="{{ DownloadUrl }}">{{ DownloadUrl }}</a></p>
+  <p>Title: "{{  Title }}" </p>
+  <p>Description: {{ Description }}</p>
+  <p>EpisodeNumber: {{ EpisodeNumber }}</p>
+   <br>
+</div>
+
+
+{% endblock %}
