@@ -1,17 +1,18 @@
 <?php
   namespace App\Controller;
-use Symfony\Component\HttpFoundation\Response;
+
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
 
-  class ArticleController extends AbstractController {
+class ArticleController extends AbstractController {
     /**
      * @Route("/")
      */
     public function homepage() {
-      return new Response('haha first page doone!');
-      // return new Response('my first page already!');
+      return new Response('my first page is finally working');
     }
+
     /**
      * @Route("/news/{slug}")
      */
