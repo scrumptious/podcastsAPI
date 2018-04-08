@@ -116,7 +116,7 @@ class EpisodeController extends Controller {
       return new Response("<p>Episode ". $this->id . "of " . $this->podcast_id . " podcast has been deleted.</p>");
     }
     else {
-      return new Response ("Could not delete anything");
+      return new Response ("Could not delete anything", HTTP_, );
     }
   }
 
